@@ -1,0 +1,100 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="start-tittle">
+      Perfil Profesional
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">perProfesional</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-button id="open-modal" fill="outline" color="medium" expand="block">Abrir :3
+
+  </ion-button>
+  <ion-modal #modal trigger="open-modal" [canDismiss]="canDismiss" [presentingElement]="presentingElement">
+    <ng-template>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Calificación del Día
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+          </ion-title>
+          <ion-buttons slot="end">
+            <ion-button (click)="modal.dismiss()">Cerrar</ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <p class="ion-padding-horizontal">Debes aceptar los términos y condiciones para cerrar esta modalidad.</p>
+        <ion-item>
+          <ion-checkbox id="terms" (ionChange)="onTermsChanged($event)" [checked]="canDismiss">
+            <div class="ion-text-wrap">Si nos calificas con 5 estrellas podras continuar leyendo
+              <ion-icon name="star"></ion-icon>
+            </div>
+          </ion-checkbox>
+        </ion-item>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+
+  <br>
+  <h1 style="margin-left: 30px!important;">
+    Perfil Profesional
+    <ion-img src="assets/desarrollo-profesional.png"></ion-img>
+  </h1>
+  <br>
+
+  <ion-note>
+    <p>
+
+      Soy un estudiante activo de la Escuela Politécnica Nacional, inmerso en el quinto semestre de mi programa de
+      estudios en Desarrollo de Software. Mi experiencia académica ha sido más que un proceso de aprendizaje; ha sido un
+      viaje apasionante en el vasto y dinámico mundo del desarrollo de software. A lo largo de mi trayectoria, he
+      cultivado un conjunto sólido de habilidades técnicas y conocimientos especializados que me permiten abordar
+      desafíos complejos en el ámbito de la ingeniería de software.
+    </p>
+    <p>
+
+      La Escuela Politécnica Nacional ha sido la plataforma que ha impulsado mi crecimiento profesional y me ha
+      proporcionado una base robusta en áreas clave de mi disciplina. Este periodo académico ha sido fundamental para mi
+      desarrollo, proporcionándome una comprensión profunda de los principios fundamentales del desarrollo de software,
+      así como la capacidad para aplicar estos conocimientos en situaciones del mundo real.
+    </p>
+
+    <p>
+      Me entusiasma la idea de continuar mi aprendizaje y explorar nuevas oportunidades en este campo en constante
+      evolución. Estoy comprometido/a a contribuir con mi experiencia y habilidades al avance y la innovación dentro de
+      la industria del desarrollo de software. Con una mentalidad proactiva y un enfoque orientado a resultados, aspiro
+      a participar en proyectos significativos que no solo desafíen mis habilidades, sino que también contribuyan al
+      crecimiento continuo de mi carrera y al progreso del sector tecnológico.
+    </p>
+  </ion-note>
+  <ion-range labelPlacement="stacked"></ion-range>
+
+  <ion-segment value="heart">
+    <ion-segment-button value="call">
+      <ion-img src="assets/bases.png"></ion-img>
+    </ion-segment-button>
+    <ion-segment-button value="heart">
+      <ion-img src="assets/desarrollador.png"></ion-img>
+    </ion-segment-button>
+    <ion-segment-button value="pin">
+      <ion-img src="assets/github.png"></ion-img>
+    </ion-segment-button>
+  </ion-segment>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title class="start-tittle">Perfil Profesional</ion-title>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,52 @@
+ion-thumbnail {
+    --size: 200px;
+    --border-radius: 20px;
+}
+
+ion-title {
+    font-style: oblique;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: italic;
+}
+
+ion-label {
+    margin-left: 10px;
+}
+
+ion-toolbar {
+    --opacity: 0.5;
+}
+
+ion-footer {
+    background-color: #e6ced6;
+}
+
+ion-header {
+    background-color: #e6ced6;
+}
+
+ion-icon {
+    color: #e6ced6;
+}
+
+p {
+    line-height: 150%;
+    font: monospace 150%;
+
+}
+h1 {
+    font-style: italic; /* Estilo cursivo */
+    text-decoration: underline; /* Subrayado */
+    text-underline-offset: 6px; /* Distancia del subrayado */
+    text-decoration-color: pink; /* Color del subrayado */
+    -webkit-text-stroke: 2px black; /* Contorno */
+    display: flex;
+    align-items: center;
+}
+.img-i{
+    width: 100px!important; 
+    align-items: center; 
+    margin-right: 9px;
+}
+

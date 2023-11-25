@@ -13,6 +13,14 @@ export class AppComponent {
     { title: 'Trash', url: '/folder/trash', icon: 'trash' },
     { title: 'Spam', url: '/folder/spam', icon: 'warning' },
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+  public appPages2 = [
+    { title: 'Acerca de Mi', url: 'estudiantil', icon: 'people'},
+    { title: 'Formación Académica', url: 'form-academica', icon: 'school' },
+    { title: 'Perfil Profesional ', url: 'per-profesional', icon: 'desktop' },
+    { title: 'Habilidades Técnicas', url: 'habilidades', icon: 'bookmarks' },
+    { title: 'Proyectos Destacados', url: 'destacados', icon: 'extension-puzzle' },
+    { title: 'Contactos', url: 'contactos', icon: 'call' },
+  ];
+  
   constructor() {}
 }
