@@ -20,10 +20,7 @@ const routes: Routes = [
     path: 'forma_academica',
     loadChildren: () => import('./users1/formacion-academica/formacion-academica.module').then( m => m.FormacionAcademicaPageModule)
   },
-  {
-    path: 'habilidades',
-    loadChildren: () => import('./users1/habilidades/habilidades.module').then( m => m.HabilidadesPageModule)
-  },
+
   {
     path: 'Contacto',
     loadChildren: () => import('./users1/contacto/contacto.module').then( m => m.ContactoPageModule)
@@ -42,10 +39,7 @@ const routes: Routes = [
     path: 'per-profesional',
     loadChildren: () => import('./users2/per-profesional/per-profesional.module').then( m => m.PerProfesionalPageModule)
   },
-  {
-    path: 'habilidades',
-    loadChildren: () => import('./users2/habilidades/habilidades.module').then( m => m.HabilidadesPageModule)
-  },
+  
   {
     path: 'destacados',
     loadChildren: () => import('./users2/destacados/destacados.module').then( m => m.DestacadosPageModule)
@@ -54,6 +48,11 @@ const routes: Routes = [
     path: 'contactos',
     loadChildren: () => import('./users2/contactos/contactos.module').then( m => m.ContactosPageModule)
   },
+  {
+    path: 'habilidad',
+    loadChildren: () => import('./users2/habilidad/habilidad.module').then( m => m.HabilidadPageModule)
+  },
+  //Fran
   {
     path: 'habilidades',
     loadChildren: () => import('./users1/habilidades/habilidades.module').then( m => m.HabilidadesPageModule)
@@ -70,6 +69,7 @@ const routes: Routes = [
     path: 'contacto',
     loadChildren: () => import('./users1/contacto/contacto.module').then( m => m.ContactoPageModule)
   }
+
 
 
 ];

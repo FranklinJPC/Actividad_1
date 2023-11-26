@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
+    <ion-title>Galeria de Fotos</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -26,5 +26,15 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+
+  <ion-button class="botton-photo" id="open-popover" color="warning">Haga Click</ion-button>
+  <ion-popover [keepContentsMounted]="true" trigger="open-popover">
+    <ng-template>
+      <ion-content class="ion-padding">
+        Para Continuar Tome una una foto
+        y sonria 😉
+      </ion-content>
+    </ng-template>
+  </ion-popover>
 
 </ion-content>

@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HabilidadesPageRoutingModule } from './habilidades-routing.module';
+import { HabilidadPageRoutingModule } from './habilidad-routing.module';
 
-import { HabilidadesPage } from './habilidades.page';
+import { HabilidadPage } from './habilidad.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HabilidadesPageRoutingModule
+    HabilidadPageRoutingModule
   ],
-  declarations: [HabilidadesPage]
+  declarations: [HabilidadPage]
 })
-export class HabilidadesPageModule {}
+export class HabilidadPageModule {}
