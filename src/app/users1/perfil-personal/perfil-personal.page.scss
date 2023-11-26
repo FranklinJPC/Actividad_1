@@ -1,0 +1,33 @@
+ion-content{
+    padding: 50px;
+}
+ion-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+    border-bottom: solid 1px #fff;
+    color: #fff;
+}
+
+ion-thumbnail {
+    --size: 200px;
+    --border-radius: 20px;
+}
+
+ion-col > div > p{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.ion-col-another > p{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+ion-col > p{
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+ion-item {
+    --padding-start: 0;
+  }

@@ -13,6 +13,12 @@ export class AppComponent {
     { title: 'Trash', url: '/folder/trash', icon: 'trash' },
     { title: 'Spam', url: '/folder/spam', icon: 'warning' },
   ];
+  public appPages1 = [
+    { title: 'Perfil Personal', url: 'perfil_personal', icon: 'people'},
+    { title: 'Formación Académica', url: 'forma_academica', icon: 'school' },
+    { title: 'Habilidades ', url: 'habilidades', icon: 'desktop' },
+    { title: 'Contacto', url: 'contacto', icon: 'call' }
+  ]
   public appPages2 = [
     { title: 'Acerca de Mi', url: 'estudiantil', icon: 'people'},
     { title: 'Formación Académica', url: 'form-academica', icon: 'school' },

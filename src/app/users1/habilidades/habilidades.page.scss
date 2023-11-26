@@ -1,0 +1,22 @@
+.ion-col-another > p{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+ion-col {
+
+    border-bottom: solid 1px #fff;
+    color: #fff;
+}
+  ion-label strong {
+    display: block;
+  
+    max-width: calc(100% - 60px);
+  
+    overflow: hidden;
+  
+    text-overflow: ellipsis;
+  }
+  
+  ion-label ion-note {
+    font-size: 0.1rem;
+  }
